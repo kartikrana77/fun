@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 body {
   background: url("https://images.wallpapersden.com/image/download/4k-stranger-things-season-5_bmhnZ2aUmZqaraWkpJRoZmZlrWhtbW0.jpg");
   background-size: cover;
@@ -9,6 +13,8 @@ body {
   justify-content: center;
   align-items: center;
   font-family: 'Creepster', cursive;
+   overflow-x: hidden;
+   background-position: center;
 }
 
 .hidden {
@@ -26,6 +32,7 @@ body {
   backdrop-filter: blur(10px);
   max-width: 90%;
   text-align: center;
+   box-sizing: border-box;
 }
 
 #box2 {
@@ -41,14 +48,15 @@ body {
   border: #585858 solid;
 }
 
-.cont {
+.cont{
   font-size: large;
   padding: 8px;
   border: none;
   border-radius: 5px;
   outline: none;
   background-color: #585858;
-
+  width: 100%;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -119,11 +127,12 @@ h1 {
     margin-left: 20px;
   }
 
-  #but {
-    padding: 2px 8px;
-    margin-left: 80px;
-  }
-
+  #but{
+  padding: 4px 10px;
+  margin-left: 83px;
+  margin-right: auto;
+  display: block;
+}
   h1 {
     font-size: 22px;
   }
