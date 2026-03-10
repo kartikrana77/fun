@@ -89,6 +89,9 @@ h1 {
   max-width:80%;
   border-radius:10px;
   overflow: hidden;
+    pointer-events: none;
+      user-select: none;
+    -webkit-user-drag: none;
 }
 
 
