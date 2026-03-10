@@ -1,0 +1,132 @@
+body {
+  background: url("https://images.wallpapersden.com/image/download/4k-stranger-things-season-5_bmhnZ2aUmZqaraWkpJRoZmZlrWhtbW0.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Creepster', cursive;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: inline-block;
+}
+
+#box {
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 20px 40px 30px 40px;
+  backdrop-filter: blur(10px);
+  max-width: 90%;
+}
+
+#box2 {
+  text-align: center;
+  width: 350px;
+  max-width: 90%;
+  padding: 20px;
+}
+
+#vid {
+  width: 200px;
+  height: 200px;
+  border: #585858 solid;
+}
+
+.cont {
+  font-size: large;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: #585858;
+
+}
+
+h1 {
+  text-align: center;
+}
+
+#but {
+  margin-top: 25px;
+  font-size: 22px;
+  border-radius: 8px;
+  border: none;
+  padding: 6px 14px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#heading{
+  font-size: 24px;
+  max-width: 320px;
+  margin: 20px auto;
+  line-height: 1.7;
+  text-align: center;
+  word-break: break-word;
+  white-space: pre-line;
+}
+
+#gif{
+  width:500px;
+  max-width:80%;
+  border-radius:10px;
+  overflow: hidden;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 2px 2px red;
+  }
+  25% {
+    text-shadow: -2px 2px blue;
+  }
+  50% {
+    text-shadow: 2px -2px red;
+  }
+  75% {
+    text-shadow: -2px -2px blue;
+  }
+  100% {
+    text-shadow: 2px 2px red;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+    padding: 20px;
+  }
+
+  #box {
+    padding: 20px 40px 40px 20px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+
+  .cont {
+    font-size: medium;
+    margin-left: 20px;
+  }
+
+  #but {
+    padding: 2px 8px;
+    margin-left: 75px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  #heading {
+    font-size: 22px;
+  }
+}
