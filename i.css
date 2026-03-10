@@ -13,7 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: 'Creepster', cursive;
-   overflow-x: hidden;
+   overflow: hidden;
    background-position: center;
 }
 
@@ -117,7 +117,7 @@ h1 {
   }
 
   #box {
-    padding: 20px 40px 40px 20px;
+    padding: 10px 40px 20px 10px;
     margin-top: 10px;
     margin-bottom: 50px;
   }
@@ -129,9 +129,17 @@ h1 {
 
   #but{
   padding: 4px 10px;
-  margin-left: 83px;
+  margin-left: 85px;
   margin-right: auto;
   display: block;
+}
+
+#N1{
+  margin-left: 20px;
+}
+
+.n2{
+  margin-left: 15px;
 }
   h1 {
     font-size: 22px;
