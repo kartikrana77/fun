@@ -13,7 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: 'Creepster', cursive;
-   overflow: hidden;
+   overflow-x: hidden;
    background-position: center;
 }
 
@@ -90,6 +90,69 @@ h1 {
   border-radius:10px;
   overflow: hidden;
 }
+
+
+
+
+
+#choiceBox{
+  margin-top:20px;
+}
+
+#choiceBox button{
+  padding:10px 15px;
+  font-size:18px;
+  margin:10px;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+#yesBtn{
+  background-color:#4CAF50;
+  color:white;
+}
+
+#noBtn{
+  background-color:#ff4d4d;
+  color:white;
+   transition: transform 0.2s ease;
+}
+
+
+
+
+#profileBox{
+    text-align:center;
+    padding:30px;
+}
+
+#profilePic{
+    width:180px;
+    border-radius:20px;
+    margin-bottom:15px;
+}
+
+#profileBox h2{
+    margin-bottom:15px;
+}
+
+.hidden{
+    display:none;
+}
+
+#profileText{
+    white-space: pre-line;
+    line-height: 1.7;
+    font-size: 16px;
+    margin-top: 10px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
 
 @keyframes glitch {
   0% {
