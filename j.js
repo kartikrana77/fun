@@ -15,6 +15,7 @@ let profileText = document.getElementById("profileText");
 
 let noCount = 0;
 let yesSize = 18;
+let username =""
 
 box2.classList.add("hidden");
 profileBox.classList.add("hidden");
@@ -41,13 +42,21 @@ button.addEventListener("click", (e) => {
 
   sound.play();
 
-  let username = Uname.value.trim().toLowerCase();
+  username = Uname.value.trim().toLowerCase();
   let usergender = gender.value.trim().toLowerCase();
   let message = "";
 
 if (usergender === "female") {
     message =
-      "Alert 🚨: A beautiful girl has entered the system.\nProtocol says I must ask her out for coffee before the Demogorgon finds us.";
+`Alert 🚨
+System detected someone beautiful.
+Name: ${username}
+Protocol activated:
+Step 1 → Compliment ${username}
+Step 2 → Ask ${username} for coffee ☕
+Warning:
+Rejecting may cause Demogorgon attack 😌`;
+
    gif.src = "https://giphy.com/embed/1qh9vOiVTo7tpei8BZ"
     choiceBox.classList.remove("hidden");
   } else if (username === "lubhansh" && usergender === "male") {
@@ -78,6 +87,8 @@ if (usergender === "female") {
 });
 
 
+ console.log(username)
+
 /* YES BUTTON */
 
 yesBtn.addEventListener("click", () => {
@@ -85,7 +96,7 @@ yesBtn.addEventListener("click", () => {
   gif.src = "https://giphy.com/embed/kJuTZbuARUniobKXRw";
 
   head.textContent =
-    "Mission Successful 😎\nCoffee date unlocked ☕";
+    `Mission Successful 😎\nCoffee date unlocked with ${username} ☕`;
 
   // hide yes/no buttons
   choiceBox.classList.add("hidden");
@@ -99,15 +110,20 @@ yesBtn.addEventListener("click", () => {
 
 
 /* NO RESPONSES */
+button.addEventListener("click", (e) => {
+  e.preventDefault();
 
-const funnyResponses = [
-  "Are you sure? I make excellent coffee ☕",
-  "Think again... I might actually be interesting 😏",
-  "Come on... even the Demogorgon believes in this date",
-  "Last chance before the Upside Down steals you 👀",
-  "You clicked No again?? Suspicious behaviour detected 🤨",
-  "Okay fine... but what if I bring pizza too? 🍕",
-];
+  username = Uname.value.trim();
+
+  funnyResponses = [
+    `Are you sure ${username}? I make excellent coffee ☕`,
+    `Think again ${username}... I might actually be interesting 😏`,
+    `Come on ${username}... even the Demogorgon believes in this date`,
+    `Last chance ${username} before the Upside Down steals you 👀`,
+    `You clicked No again ${username}?? Suspicious behaviour detected 🤨`,
+    `Okay fine ${username}... but what if I bring pizza too? 🍕`,
+  ];
+});
 
 let noGifs = [
   "https://giphy.com/embed/gBiWfypGQBnpRoBOLH",
@@ -135,7 +151,7 @@ noBtn.addEventListener("click", () => {
   } else {
 
     head.textContent =
-      "Okay okay 😅 I will take that as a maybe.";
+      `Okay okay ${username} 😅 I will take that as a maybe.`;
 
    gif.src =  "https://giphy.com/embed/aV0TP55kop0s1NoKI2"
   }
